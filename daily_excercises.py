@@ -28,11 +28,42 @@ def add_numbers(nums):
     total = 0
     for x in nums:
         total += x
+    print(total)
+
+
+def has22(nums):
+    for x in range(len(nums)):
+        for y in range(x + 1, len(nums)):
+            if nums[x] == 2 and nums[y] == 2:
+                return True
+    return False
+
+
+def is_sorted(nums):
+    for x in range(len(nums)):
+        for y in range(x + 1, len(nums)):
+            if nums[x] < nums[y]:
+                return True
+    return False
+
+
+def remove_duplicates(nums):
+    blank = []
+    for x in nums:
+        if x not in blank:
+            blank.append(x)
+    print(blank)
+
+
+def get_max(nums):
 
 
 def main():
     print(are_duplicates([1, 2, 3, 4, 5, 6, 3, 7]))
-    print(add_numbers([1, 2, 3, 6, 6, 7]))
+    add_numbers([1, 2, 3, 6, 6, 7])
+    print(has22([1, 2, 2, 3]))
+    print(is_sorted([1, 2, 3]))
+    remove_duplicates([1, 3, 5, 7, 8, 8, 3, 9])
 
 
 main()
