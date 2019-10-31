@@ -56,6 +56,9 @@ def remove_duplicates(nums):
 
 
 def get_max(nums):
+    empty = []
+    for x in range(nums):
+    max(nums)
 
 
 def main():
@@ -64,6 +67,7 @@ def main():
     print(has22([1, 2, 2, 3]))
     print(is_sorted([1, 2, 3]))
     remove_duplicates([1, 3, 5, 7, 8, 8, 3, 9])
+    print(get_max([1, 23, 43, 54, 93, 56, 19, 30, 28, 5, 1, 53, 99]))
 
 
 main()
